@@ -1,35 +1,43 @@
-// ctrl+shift+b to build the app, then ./myapp in the commandline
-#include <cstddef>
-#include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <iostream>
- 
+
 int main() {
+    // Initialize GLFW
     if (!glfwInit()) {
         return -1;
     }
 
-    GLFWwindow* window = glfwCreateWindow(800, 600, "My Window", NULL, NULL);
+    // Create a window of size 640x480 with your custom title
+    GLFWwindow* window = glfwCreateWindow(640, 480, "My Custom Window", NULL, NULL);
     if (!window) {
         glfwTerminate();
         return -1;
     }
 
-    // Connecting OpenGL Rendering to the window pointer.
+    // Make the OpenGL context current
     glfwMakeContextCurrent(window);
 
+    // Main event loop
     while (!glfwWindowShouldClose(window)) {
-        glfwSwapBuffers(window);
-
+        // Close window on ESC key press
         if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
             glfwSetWindowShouldClose(window, true);
         }
 
+        // Set clear color (background color)
+        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        // Clear the color buffer
+        glClear(GL_COLOR_BUFFER_BIT);
 
+        // Swap buffers to display the color
+        glfwSwapBuffers(window);
+
+        // Poll for events
         glfwPollEvents();
     }
 
+    // Clean up and close GLFW
     glfwDestroyWindow(window);
     glfwTerminate();
+
     return 0;
-} 
+}
