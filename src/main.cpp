@@ -15,11 +15,16 @@ int main() {
         return -1;
     }
 
-    // Make the OpenGL context be on this current window.
+    // Connecting OpenGL Rendering to the window pointer.
     glfwMakeContextCurrent(window);
 
     while (!glfwWindowShouldClose(window)) {
         glfwSwapBuffers(window);
+
+        if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
+            glfwSetWindowShouldClose(window, true);
+        }
+
 
         glfwPollEvents();
     }
