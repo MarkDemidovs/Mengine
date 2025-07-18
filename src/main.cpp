@@ -1,6 +1,8 @@
 #include <GLFW/glfw3.h>
 
 int main() {
+    float redValue = 0.0f;
+    float increment = 0.01f;
     // Initialize GLFW
     if (!glfwInit()) {
         return -1;
@@ -23,8 +25,12 @@ int main() {
             glfwSetWindowShouldClose(window, true);
         }
 
-        // Set clear color (background color)
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        // Dynamic Background Colour Changing
+        redValue += increment;
+        if (redValue > 1.0f || redValue < 0.0f){
+            increment = -increment;
+        }
+        glClearColor(redValue, 0.3f, 0.3f, 1.0f);
         // Clear the color buffer
         glClear(GL_COLOR_BUFFER_BIT);
 
