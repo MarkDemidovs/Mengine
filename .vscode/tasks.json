@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-my-opengl",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "g++ src/glad.c src/main.cpp -Iinclude $(pkg-config --cflags glfw3) $(pkg-config --libs glfw3) -lGL -ldl -o myapp"
+      ],
+      "problemMatcher": ["$gcc"],
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}
