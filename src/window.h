@@ -20,16 +20,13 @@ public:
     // Set the window to close
     void setShouldClose(bool value);
 
-    // Poll events
-    void pollEvents() const;
-
-    // Swap buffers
-    void swapBuffers() const;
-
     // Clear color buffer with given RGBA
     void clearColor(float r, float g, float b, float a) const;
 
-    GLFWwindow* getNativeWindow() const { return window; }
+    GLFWwindow* getNativeWindow() const { return window; };
+
+    // Polls events and swaps buffers
+    void load() const;
 
 };
 

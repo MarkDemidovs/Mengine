@@ -13,8 +13,7 @@ int main() {
 
             window.clearColor(0.2f, 0.3f, 0.3f, 1.0f);
 
-            window.swapBuffers();
-            window.pollEvents();
+            window.load();
         }
     }
 

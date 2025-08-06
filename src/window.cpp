@@ -1,4 +1,5 @@
 #include "window.h"
+#include <GLFW/glfw3.h>
 #include <iostream>
 
 Window::Window(int width, int height, const char* title) {
@@ -33,15 +34,14 @@ void Window::setShouldClose(bool value) {
     glfwSetWindowShouldClose(window, value);
 }
 
-void Window::pollEvents() const {
-    glfwPollEvents();
-}
-
-void Window::swapBuffers() const {
-    glfwSwapBuffers(window);
-}
 
 void Window::clearColor(float r, float g, float b, float a) const {
     glClearColor(r, g, b, a);
     glClear(GL_COLOR_BUFFER_BIT);
+}
+
+
+void Window::load() const {
+    glfwSwapBuffers(window);
+    glfwPollEvents();
 }
