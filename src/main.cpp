@@ -11,7 +11,7 @@ int main() {
                 window.setShouldClose(true);
             }
 
-            window.clearColor(0.2f, 0.3f, 0.3f, 1.0f);
+            window.setColor(0.2f, 0.3f, 0.3f, 1.0f);
 
             window.load();
         }

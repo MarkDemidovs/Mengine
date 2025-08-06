@@ -21,7 +21,7 @@ public:
     void setShouldClose(bool value);
 
     // Clear color buffer with given RGBA
-    void clearColor(float r, float g, float b, float a) const;
+    void setColor(float r, float g, float b, float a) const;
 
     GLFWwindow* getNativeWindow() const { return window; };
 

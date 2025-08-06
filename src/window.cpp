@@ -35,7 +35,7 @@ void Window::setShouldClose(bool value) {
 }
 
 
-void Window::clearColor(float r, float g, float b, float a) const {
+void Window::setColor(float r, float g, float b, float a) const {
     glClearColor(r, g, b, a);
     glClear(GL_COLOR_BUFFER_BIT);
 }
