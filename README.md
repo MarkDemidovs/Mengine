@@ -1,1 +1,1 @@
-TBA Class-based remake
+g++ src/main.cpp -o myWindow -lglfw -lGL 
