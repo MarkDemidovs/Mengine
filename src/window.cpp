@@ -1,6 +1,7 @@
-#include "window.h"
+#include "../include/glad/glad.h" 
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include "window.h"
 
 Window::Window(int width, int height, const char* title) {
     if (!glfwInit()) {
@@ -17,6 +18,14 @@ Window::Window(int width, int height, const char* title) {
     }
 
     glfwMakeContextCurrent(window);
+
+    // Load OpenGL functions with GLAD
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+        std::cerr << "Failed to initialize GLAD\n";
+        glfwDestroyWindow(window);
+        glfwTerminate();
+        window = nullptr;
+    }
 }
 
 Window::~Window() {
@@ -34,12 +43,10 @@ void Window::setShouldClose(bool value) {
     glfwSetWindowShouldClose(window, value);
 }
 
-
 void Window::setColor(float r, float g, float b, float a) const {
     glClearColor(r, g, b, a);
     glClear(GL_COLOR_BUFFER_BIT);
 }
-
 
 void Window::load() const {
     glfwSwapBuffers(window);
