@@ -1,8 +1,7 @@
 #include "../include/glad/glad.h"
 #include <GLFW/glfw3.h>
-#include "mesh.h"
 #include "window.h"
-
+#include "mesh.h"
 int main() {
     Window window(640, 480, "Square Example");
 
@@ -30,6 +29,7 @@ int main() {
         }
 
         window.setColor(0.2f, 0.3f, 0.3f, 1.0f);
+        square.setColor(1.0f, 0.0f, 0.0f); 
         square.draw();
         window.load();
     }
