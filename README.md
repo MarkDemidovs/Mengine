@@ -2,9 +2,7 @@
 A simple, easy-to-learn performant game engine powered by OpenGL.
 Fast. Fun. Batteries-Included.
 
-<img src="banner.png" width="500px"
-
->
+<img src="banner.png" width="500px">
 
 Mengine uses the blazing-fast speed and power of OpenGL and C++ to assist coders with creating scala, easy-to-manage games and 3-dimensional software alike.
 There is no more need to use Python for (slow) prototyping.
