@@ -1,13 +1,22 @@
 #include "./Mengine.h"
+#include "./Square.h"
+#include "./Triangle.h"
 
 int main() {
-    Mengine window(800, 800, "Title");
+    Mengine window(800, 800, "Shapes");
+
+    Square square;
+    Triangle triangle;
+
+    square.init();
+    triangle.init();
 
     while (!window.shouldClose()) {
-
         window.clear();
+        window.colorBackground(0.1f, 0.1f, 0.1f);
 
-        window.colorBackground(1.0f, 0.3f, 1.0f); // set color
+        square.draw();
+        triangle.draw();
 
         window.update();
     }
