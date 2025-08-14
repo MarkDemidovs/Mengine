@@ -34,7 +34,7 @@ Feel free to refer to the files stored inside of the src folder (specifically ma
 
 ### Feature	Status 
 
-Window Creation	✔ (V0.1.0)
+Window Creation	✔ (V0.1)
 
 
 ## 💬 Questions or Issues?

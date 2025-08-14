@@ -7,7 +7,7 @@ int main() {
 
         window.clear();
 
-        window.colorBackground(0.2f, 0.3f, 1.0f); // set color
+        window.colorBackground(1.0f, 0.3f, 1.0f); // set color
 
         window.update();
     }
