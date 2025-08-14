@@ -35,6 +35,7 @@ Feel free to refer to the files stored inside of the src folder (specifically ma
 ### Feature	Status 
 
 Window Creation	✔ (V0.1)
+Shapes (2d)	✔ (V0.2)
 
 
 ## 💬 Questions or Issues?
