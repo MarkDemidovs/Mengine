@@ -36,18 +36,6 @@ Feel free to refer to the files stored inside of the src folder (specifically ma
 
 Window Creation	✔ (V0.1.0)
 
-Mesh Creation (as in per vertices - squares, triangles..)	✔ (V0.2.0)
-
-Shaders (Mesh Colouring...)	✔ (V0.3.0)
-
-Textures (2 Dimensional) ✔
-
-Transformations ✎
-
-Camera Basics ☐
-
-..and more TBA!
-
 
 ## 💬 Questions or Issues?
 
