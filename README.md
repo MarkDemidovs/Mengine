@@ -36,7 +36,7 @@ Feel free to refer to the files stored inside of the src folder (specifically ma
 
 Window Creation	✔ (V0.1)
 Shapes (2d)	✔ (V0.2)
-
+Textured Quads (GLM Movement) ✔ (V0.3)
 
 ## 💬 Questions or Issues?
 
