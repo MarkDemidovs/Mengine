@@ -16,7 +16,7 @@ Made for:
 <hr>
 
 # 🔧 Setup
-As previously stated, Mengine is Batteries-included, so starting your game-development journey is as easy as:
+Mengine is Batteries-included, so starting your game-development journey is as easy as:
 
 ```bash
 git clone https://github.com/MarkDemidovs/Mengine.git
@@ -44,5 +44,6 @@ Open an issue here on GitHub, or contact me:
 
 📨 Twitter / X: @markdemidovs
 ⭐️ Thanks for Visiting!
+
 
 This is just the beginning, fork the project, or just build cool stuff!
