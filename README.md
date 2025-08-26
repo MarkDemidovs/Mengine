@@ -25,7 +25,7 @@ make
 ./app
 ```
 
-..You're set!
+and You're set!
 Feel free to refer to the files stored inside of the src folder (specifically main.cpp) for documentation.
 
 ## 🚧 Roadmap — Before, Beta 1.0 and Beyond
@@ -47,3 +47,4 @@ Open an issue here on GitHub, or contact me:
 
 
 This is just the beginning, fork the project, or just build cool stuff!
+
