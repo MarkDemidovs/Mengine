@@ -36,7 +36,7 @@ Feel free to refer to the files stored inside of the src folder (specifically ma
 
 Window Creation	✔ (V0.1)
 Shapes (2d)	✔ (V0.2)
-Textured Quads (GLM Movement) ✔ (V0.3)
+Textures with Quads (GLM Movement) ✔ (V0.3)
 
 ## 💬 Questions or Issues?
 
@@ -47,4 +47,5 @@ Open an issue here on GitHub, or contact me:
 
 
 This is just the beginning, fork the project, or just build cool stuff!
+
 
