@@ -46,6 +46,5 @@ Open an issue here on GitHub, or contact me:
 ⭐️ Thanks for Visiting!
 
 
-This is just the beginning, fork the project, or just build cool stuff!
 
 
