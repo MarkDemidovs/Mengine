@@ -4,7 +4,7 @@ Fast. Fun. Batteries-Included.
 
 <img src="banner.png" width="500px">
 
-Mengine uses the blazing-fast speed and power of OpenGL and C++ to assist coders with creating scala, easy-to-manage games and 3-dimensional software alike.
+Mengine uses the blazing-fast speed and power of OpenGL and C++ to assist creators and creatives with creating scalable, easy-to-manage games and 3-dimensional software alike.
 There is no more need to use Python for (slow) prototyping.
 
 Made for:
@@ -44,6 +44,7 @@ Open an issue here on GitHub, or contact me:
 
 📨 Twitter / X: @markdemidovs
 ⭐️ Thanks for Visiting!
+
 
 
 
